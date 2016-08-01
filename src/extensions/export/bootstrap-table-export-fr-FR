@@ -5,11 +5,11 @@
 (function ($) {
     'use strict';
 
-    $.fn.bootstrapTable.locales['fr-FR'] = {
+    $.extend($.fn.bootstrapTable.locales['fr-FR'], {
         formatExport: function () {
             return 'Exporter les données';
         }
-    };
+    });
 
     $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['fr-FR']);
 
